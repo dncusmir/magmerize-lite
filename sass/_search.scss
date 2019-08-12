@@ -1,0 +1,41 @@
+// search button
+.mgmr-search button.btn {
+    color: $mgmr_color__search_button;
+
+    @include hover-focus {
+      color: $mgmr_color__search_button_hover_focus;
+    }
+
+    border: 0;
+    padding-bottom: calc(#{$input-padding-y} / 4);
+}
+
+// search form
+.mgmr-search {
+    border-bottom: 1px solid $mgmr_color__search_button;
+}
+
+.mgmr-search:focus, .mgmr-search:focus-within, .mgmr-search:hover {
+    background-color: darken($mgmr_color__background_primary, 10%) !important;
+    border-bottom: 0;
+    margin-bottom: calc(-3 * #{$input-padding-y} / 4);
+    padding-bottom: $input-padding-y;
+
+    @include border-radius(5px);
+}
+
+.mgmr-search input.form-control {
+    background: inherit;
+    border: 0;
+    height: inherit;
+    padding-bottom: calc(#{$input-padding-y} / 4);
+}
+
+.mgmr-search input.form-control::placeholder {
+    color: $mgmr_color__search_button;
+}
+
+.mgmr-search input.form-control:focus {
+    box-shadow: none;
+    color: $mgmr_color__search_button_hover_focus;
+}

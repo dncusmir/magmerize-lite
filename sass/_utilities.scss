@@ -1,0 +1,51 @@
+// Separators
+.mgmr_separator_dashed {
+    @include mgmr_separator();
+}
+.mgmr_separator_solid {
+    @include mgmr_separator(solid, 1px, #eee);
+}
+
+// Borders
+.mgmr_short_border_bottom::after {
+    @include mgmr_short_border(solid, 2rem, 2px, darken(#212529, 10%), bottom, 0.7rem);
+}
+
+// Margin auto
+.mgmr_mx-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mgmr_mx-after-a::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Rating box
+.rating-box {
+    position:relative;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    color: $mgmr_color__ratingbox;
+
+    &:before{
+        content: "\f005 \f005 \f005 \f005 \f005";
+        font-weight: 200;
+    }
+
+    .rating {
+        position: absolute;
+        left: 0;
+        top: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        color: $mgmr_color__ratingbox;
+
+        &:before {
+            content: "\f005 \f005 \f005 \f005 \f005";
+            font-weight: 900;
+        }
+    }
+}

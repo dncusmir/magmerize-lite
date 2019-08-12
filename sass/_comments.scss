@@ -1,0 +1,15 @@
+.comment-metadata {
+    font-family: $mgmr_font_family;
+
+    a, a:visited {
+        color: $mgmr_color__primary;
+    }
+    .edit-link {
+        padding-left: 0.5rem;
+    }
+}
+.comment-content {
+    font-family: $mgmr_font_family;
+    color: $mgmr_color__post-h;
+    font-weight: 300;
+}

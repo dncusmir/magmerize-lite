@@ -1,0 +1,59 @@
+// The theme colors
+$mgmr_color__primary: #13aff0;
+$mgmr_color__secondary: #0d0d0d;
+$mgmr_color__background_primary: #333;
+$mgmr_color__background_secondary: #f4fdf3;
+$mgmr_color__box-cat-a: #0e9fdc;
+$mgmr_color__menu-color: rgba(0, 0, 0, 0.5);
+$mgmr_color__body: #404040;
+$mgmr_color__body-background: #fff;
+$mgmr_color__search_button: rgba(255, 255, 255, 0.5);//$navbar-dark-color;
+$mgmr_color__search_button_hover_focus: rgba(255, 255, 255, 0.75);//$navbar-dark-hover-color;
+$mgmr_color__slider: #f9f9f9;//$mgmr_color__primary;//$navbar-dark-color;
+$mgmr_color__slider-background: rgba(31, 31, 31, 0.4);//$mgmr_color__primary;
+$mgmr_color__slider-hover: $mgmr_color__primary;
+$mgmr_color__widget-background: #f5f5f5;
+$mgmr_color__widget-separator: #e4e4e4;
+$mgmr_color__widget2-background: $mgmr_color__widget-separator;
+$mgmr_color__widget2-span: #fff;
+$mgmr_color__widget2-span-background: $mgmr_color__primary;
+$mgmr_color__widget3: #B91D22;
+$mgmr_color__widget3-a: $mgmr_color__primary;
+$mgmr_color__ratingbox: #F68127;
+$mgmr_color__footer: #bbb;
+$mgmr_color__footer-background: #1b1b1b;
+$mgmr_color__post-a: $mgmr_color__primary;
+$mgmr_color__post-breadcrumb: #999;
+$mgmr_color__post-h: #212529;
+$mgmr_color__post-body: $mgmr_color__post-h;
+$mgmr_color__post-social: #333;
+$mgmr_color__post-header-meta-a: $mgmr_color__primary;
+$mgmr_color__post-header-meta-text-left: #555;
+$mgmr_color__post-header-meta-text-right: #bbb;
+$mgmr_color__post-header-meta1: $mgmr_color__post-header-meta-text-left;
+$mgmr_color__post-header-meta1-a: $mgmr_color__post-social;
+$mgmr_color__post-header-meta1-a-hover: $mgmr_color__primary;
+$mgmr_color__post-about-h: $mgmr_color__post-h;
+$mgmr_color__post-about-p: #444;
+$mgmr_color__post-about-social-a: $mgmr_color__post-social;
+$mgmr_color__post-recommended: $mgmr_color__post-h;
+
+// Overwrite bootstrap colors
+$primary: $mgmr_color__background_primary;
+$secondary: $mgmr_color__background_secondary;
+
+// Adding an additional theme color (ex. classes btn-cool, bg-cool)
+$theme-colors: (
+    'tertiary': $mgmr_color__primary
+);
+
+// Fonts
+$mgmr_font_family: Roboto, 'Open Sans', sans-serif;
+$mgmr_font_family__alternative: 'Open Sans', sans-serif;
+$mgmr_font_family__title: Heebo, Roboto, 'Open Sans', sans-serif;
+
+// Sizes
+$mgmr_size__slider-img: 170px;
+
+// Dividers
+$mgmr_divider__breadcrumb: quote(">");

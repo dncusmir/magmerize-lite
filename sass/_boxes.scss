@@ -1,0 +1,71 @@
+// mgmr_box
+.mgmr_box {
+    position: relative;
+    display: block;
+
+    .mgmr_box_top {
+        position: relative;
+
+        .mgmr_box_img {
+            overflow: hidden;
+
+            a:hover {
+                text-decoration: underline;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                transition: all 350ms ease-out;
+
+                &:hover {
+                    transform: scale(1.04);
+                }
+            }
+        }
+
+        .mgmr_box_category {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            a {
+                padding: 2px 6px;
+                border-radius: 1px;
+                border: 1px solid $mgmr_color__box-cat-a;
+                font-family: $mgmr_font_family__alternative;
+                font-size: 12px;
+            }
+        }
+
+        .mgmr_box_meta {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-family: $mgmr_font_family__alternative;
+            font-size: 12px;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+
+            a {
+                //color: lighten($mgmr-box-cat-a, 10%) !important;
+                color: #333;
+            }
+        }
+    }
+
+    .mgmr_box_bottom {
+        color: $body-color;
+
+        h2 {
+            text-align: center;
+            font-family: $mgmr_font_family__title;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 1.1;
+        }
+        p {
+            font-family: $mgmr_font_family;
+            font-weight: 300;
+        }
+    }
+}

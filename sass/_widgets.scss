@@ -1,0 +1,103 @@
+// widgets
+.mgmr_widget_1 {
+    padding: 15px;
+    background-color: $mgmr_color__widget-background;
+
+    h4 {
+        font-family: $mgmr_font_family;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+    .mgmr_widget_1_separator {
+        @include mgmr_separator(solid, 2px, $mgmr_color__widget-separator);
+    }
+    .mgmr_widget_1_box {
+        img {
+            width: 100%;
+        }
+        h3 {
+            font-size: 1.05rem;
+        }
+        a:hover {
+            color: $mgmr_color__primary;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+.mgmr_widget_2 {
+    h4 {
+        font-family: $mgmr_font_family;
+        font-size: 1rem;
+        line-height: 1rem;
+        background-color: $mgmr_color__widget2-background;
+
+        span {
+            color: $mgmr_color__widget2-span;
+            background: $mgmr_color__widget2-span-background;
+            display: inline-block;
+            margin: 0;
+            padding: 5px 20px 4px 8px;
+            position: relative;
+            vertical-align: top;
+
+            &::after {
+                border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $mgmr_color__widget2-span-background;
+                border-style: solid;
+                border-width: 12.5px 0 12.5px 8px;
+                bottom: 0;
+                content: "";
+                position: absolute;
+                right: -7.4px;
+                top: 0;
+            }
+        }
+    }
+    .mgmr_widget_2_box {
+        img {
+            width: 100%;
+        }
+        h3 {
+            font-size: 1.05rem;
+        }
+        a {
+            color: $mgmr_color__widget2-span-background;
+
+            &:hover {
+            color: $mgmr_color__widget2-span-background;
+            }
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+.mgmr_widget_3 {
+    h4 {
+        color: $mgmr_color__widget3;
+        font-family: $mgmr_font_family;
+        font-size: 1.1rem;
+    }
+    .mgmr_widget_3_separator {
+        @include mgmr_separator(solid, 1px, $mgmr_color__widget3);
+    }
+    .mgmr_widget_3_box {
+        img {
+            width: 100%;
+        }
+        h3 {
+            font-size: 1.05rem;
+        }
+        &.mgmr_widget_3_box_highlight h3 {
+            margin: 1rem 0 0;
+            font-size: 1.2rem;
+        }
+        a:hover {
+            color: $mgmr_color__widget3-a;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}

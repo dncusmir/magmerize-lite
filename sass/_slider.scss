@@ -1,0 +1,53 @@
+
+.mgmr-slider-card::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 20%,rgba(0,0,0,.4) 100%);
+	opacity: .3;
+    z-index: 2;
+}
+.mgmr-slider-link {
+    min-height: $mgmr_size__slider-img;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.mgmr-slider-img {
+    width: 100%;
+    height: $mgmr_size__slider-img;
+    object-fit: cover;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.mgmr-slider-img.mgmr-slider-img-big {
+    height: calc(3 * #{$mgmr_size__slider-img});
+}
+.mgmr-slider-card:hover .mgmr-slider-img, .mgmr-slider-link:hover .mgmr-slider-img {
+    transform: scale(1.04);
+}
+.mgmr-slider-details {
+    color: $mgmr_color__slider;
+    background: rgba(0, 0, 0, 0.6);
+    background-color: $mgmr_color__slider-background;
+    opacity: 0.7;
+    position: absolute;
+    bottom:0;
+    left:0;
+    font-family: $mgmr_font_family__title;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 200;
+    }
+}
+.mgmr-slider-card:hover .mgmr-slider-details, .mgmr-slider-link:hover .mgmr-slider-details {
+    color: $mgmr_color__slider-hover;
+}
+.mgmr-slider-card:hover {
+    cursor: pointer;
+}

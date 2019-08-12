@@ -1,0 +1,14 @@
+body {
+    font-family: $mgmr_font_family;
+    color: $mgmr_color__body;
+    background: $mgmr_color__body-background;
+}
+a, a:visited {
+    color: $mgmr_color__primary;
+}
+a:hover {
+    color: $mgmr_color__secondary;
+}
+img {
+    height: auto;
+}

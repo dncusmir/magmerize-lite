@@ -1,0 +1,22 @@
+// Separator
+@mixin mgmr_separator($dashed: dashed, $size: 1px, $color: $body-color, $margin-x: 0, $margin-y: 0) {
+    margin: $margin-x $margin-y;
+    height: 0;
+    overflow: hidden;
+    border-bottom: $size $dashed $color;
+}
+
+// Short border
+@mixin mgmr_short_border($solid: solid, $width: 2rem, $size: 2px, $color: $body-color, $top: top, $padding: 0.7rem) {
+    width: $width;
+    content: "";
+    display: block;
+
+    @if $top == top {
+        border-top: $size $solid $color;
+        padding-bottom: $padding;
+    } @else {
+        border-bottom: $size $solid $color;
+        padding-top: $padding;
+    }
+}
